@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/rpt19-taniwha/mervin-fec-proxy/issues"
   },
-  "homepage": "https://github.com/rpt19-taniwha/mervin-fec-proxy#readme"
+  "homepage": "https://github.com/rpt19-taniwha/mervin-fec-proxy#readme",
+  "devDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^13.11.0"
+  }
 }
