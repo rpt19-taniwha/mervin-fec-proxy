@@ -8,14 +8,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
 app.use(express.static(path.join(__dirname, '/../public/')));
 
 const port = process.env.PORT || 9999;
 
 app.listen(port);
-
-
 
 app.get('/listing/:productNumber', (req, res) => {
   res.sendFile('index.html', {
