@@ -132,7 +132,7 @@ body {
   margin-top: 20px;
 }
 .left-wrapper {
-  grid-column-start: 3;
-  grid-column-end: 10;
+  grid-column-start: 2;
+  grid-column-end: 11;
   margin-right: 20px
 }
