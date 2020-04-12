@@ -17,7 +17,10 @@ body {
 }
 #etsy {
   width: 87px;
-  margin-left: 10px
+  margin-left: 10px;
+  cursor:pointer;
+
+
 }
 .search-input-wrapper {
   width: 1097.2px;
