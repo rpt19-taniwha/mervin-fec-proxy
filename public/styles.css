@@ -62,21 +62,11 @@ body {
 }
 .search-input-button:hover {
   background-color: rgba(34, 34, 34, 0.15);
-  /* transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, 1);
-  transition-delay:0s, 0s, 0s, 0s;
-  transition-duration:0.2s, 0.15s, 0.2s, 0.2s;
-  transition-property:transform, opacity, border-radius, box-shadow;
-  transition-timing-function:cubic-bezier(0.345, 0.115, 0.135, 1.42), ease-out, cubic-bezier(0.345, 0.115, 0.135, 1.42), ease-out; */
-
 }
 
 .search-input-button-icon {
   width: 22px;
 }
-.search-input-button-icon:hover {
-  background-color: rgba(34, 34, 34, 0.15);
-}
-
 
 .search-signin-button {
   border: 0px none rgb(34, 34, 34);
