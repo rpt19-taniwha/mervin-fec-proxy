@@ -2,6 +2,7 @@ import React from 'react';
 import Search from './Search.jsx';
 import Menu from './Menu.jsx';
 import Footer from './Footer.jsx';
+import Seller from './Seller.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -21,6 +22,7 @@ class App extends React.Component {
           </div>
           <div className="right-wrapper">
             <div id="product-service"></div>
+            <Seller/>
           </div>
         </div>
 
