@@ -4,7 +4,7 @@ body {
 }
 
 /* SEARCH BAR */
-.search-wrapper {
+#search-wrapper {
   display: flex;
   padding: 12px 36px;
   max-width: 1400px;
@@ -13,20 +13,17 @@ body {
   height: 48px;
   margin: 0 auto;
   justify-content: space-between;
-
 }
-#etsy {
+#search-wrapper #etsy {
   width: 87px;
   margin-left: 10px;
   cursor:pointer;
-
-
 }
-.search-input-wrapper {
+#search-wrapper .search-input-wrapper {
   width: 1097.2px;
   display: flex;
 }
-.search-input {
+#search-wrapper .search-input {
   border: 1px solid rgba(34, 34, 34, 0.5);
   background-color: rgba(34, 34, 34, 0.07);
   border-bottom-left-radius:96px;
@@ -44,7 +41,7 @@ body {
   margin: 0px 0px 0px 3px;
   padding: 9px 42px 9px 18px;
 }
-.search-input-button {
+#search-wrapper .search-input-button {
   border: 1px solid rgba(34, 34, 34, 0.5);
   background-color: rgba(34, 34, 34, 0.07);
   border-bottom-right-radius:96px;
@@ -60,15 +57,13 @@ body {
   width:61px;
   padding: 12px 21px 12px 15px;
 }
-.search-input-button:hover {
+#search-wrapper .search-input-button:hover {
   background-color: rgba(34, 34, 34, 0.15);
 }
-
-.search-input-button-icon {
+#search-wrapper .search-input-button-icon {
   width: 22px;
 }
-
-.search-signin-button {
+#search-wrapper .search-signin-button {
   border: 0px none rgb(34, 34, 34);
   display: block;
   height: 36px;
@@ -79,24 +74,23 @@ body {
   font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
   outline: none;
   cursor: pointer;
-
 }
-.search-signin-button:hover {
+#search-wrapper .search-signin-button:hover {
   border-radius:24px;
   background-color: rgba(34, 34, 34, 0.07);
 }
-.cart-wrapper {
+#search-wrapper .cart-wrapper {
   display: flex;
   align-content: center;
   justify-content: center;
   width: 48px;
   height: 48px;
 }
-.cart-wrapper:hover {
+#search-wrapper .cart-wrapper:hover {
   border-radius:24px;
   background-color: rgba(34, 34, 34, 0.07);
 }
-#cart {
+#search-wrapper #cart {
   align-self: center;
   cursor: pointer;
   line-height: 16px;
@@ -105,16 +99,14 @@ body {
   height: 38px;
 }
 
-
-
 /* MENU */
-.menu-wrapper {
+#menu-wrapper {
   display: flex;
   max-width: 1400px;
   align-items: center;
   margin: 0 auto;
 }
-.menu-list {
+#menu-wrapper .menu-list {
   color:rgb(34, 34, 34);
   display:flex;
   font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -128,7 +120,7 @@ body {
   padding-inline-start:18px;
   width: 1400px;
 }
-#menu-item {
+#menu-wrapper #menu-item {
   color:rgb(34, 34, 34);
   cursor: pointer;
   display: inline;
@@ -136,8 +128,7 @@ body {
   line-height:18px;
   letter-spacing: .5px;
 }
-
-.split {
+#menu-wrapper .split {
   border-bottom-color:rgba(34, 34, 34, 0.15);
   border-bottom-style:solid;
   border-bottom-width:2px;
@@ -151,7 +142,7 @@ body {
   right:0px;
   width:1066px;
 }
-.divider {
+#menu-wrapper .divider {
   border: 1px solid rgba(34, 34, 34, 0.20);
   margin: 0
 }
@@ -164,49 +155,163 @@ body {
 }
 .left-wrapper {
   grid-column-start: 2;
-  grid-column-end: 11;
+  grid-column-end: 9;
+  margin-right: 20px
+}
+.right-wrapper {
+  grid-column-start: 9;
+  grid-column-end: 12;
   margin-right: 20px
 }
 
 /* FOOTER */
-.footer-wrapper {
+#footer-wrapper {
   display: flex;
   flex-direction: column;
   color: white;
   background-color:rgb(47, 70, 108);
 }
-.footer-list-wrapper {
+#footer-wrapper .footer-list-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 0px 100px
-
 }
-#footer-2 {
+#footer-wrapper #footer-2 {
   width: 100%;
 }
-.footer-shop-wrapper, .footer-sell-wrapper, .footer-about-wrapper, .footer-help-wrapper {
+#footer-wrapper .footer-shop-wrapper, #footer-wrapper .footer-sell-wrapper, #footer-wrapper .footer-about-wrapper, #footer-wrapper .footer-help-wrapper {
   padding: 10px 30px;
-
 }
-
-.footer-shop-list, .footer-sell-list, .footer-about-list, .footer-help-list {
+#footer-wrapper .footer-shop-list, #footer-wrapper .footer-sell-list, #footer-wrapper .footer-about-list, #footer-wrapper .footer-help-list {
   list-style-type: none;
   margin: 5px 0px;
   padding: 0px;
 }
-
-
-
-.footer-label {
+#footer-wrapper .footer-label {
   font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
   font-size:16px;
   font-weight:500;
 }
-.footer-item {
+#footer-wrapper .footer-item {
   font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
   font-size:13px;
   font-weight:300;
   cursor:pointer;
   letter-spacing: 1px;
+}
 
+/* SELLER */
+#seller-service-container {
+  margin-top: 20px;
+  width: 387.75px;
+  padding: 0px 30px 0px 0px;
+}
+#seller-service-container .shipping-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 57px;
+  /* justify-content: stretch; */
+}
+#seller-service-container .ready-to-ship {
+  display: flex;
+  flex-direction: column;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 57px;
+}
+#seller-service-container .ready-to-ship-time {
+  font-family:Guardian-EgypTT, serif;
+  font-size: 26px;
+  font-weight:300;
+
+  letter-spacing:0.35px
+}
+#seller-service-container .ship-from {
+  display: flex;
+  flex-direction: column;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+}
+#seller-service-container .ship-from-location {
+  font-family:Guardian-EgypTT, serif;
+  font-size:26px;
+  font-weight:300;
+  height:96px;
+  letter-spacing:0.35px
+}
+#seller-service-container .cost-to-ship {
+  display: flex;
+  flex-direction: column;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+}
+#seller-service-container .cost-to-ship-amount {
+  font-family:Guardian-EgypTT, serif;
+  font-size:26px;
+  font-weight:300;
+  height:96px;
+  letter-spacing:0.35px
+}
+#seller-service-container .delivery {
+  font-family:Guardian-EgypTT, serif;
+  font-size:26px;
+  font-weight:300;
+  height:96px;
+  letter-spacing:0.35px
+}
+
+#seller-service-container img {
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+}
+
+
+#seller-service-container .message-username {
+  border: 2px solid rgb(34, 34, 34);
+  border-radius: 24px;
+  cursor: pointer;
+  outline-style:none;
+  height:48px;
+  width:432px;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:500;
+}
+
+#seller-service-container .user-profile {
+  display: flex;
+  margin-bottom: 15px
+
+}
+#seller-service-container .user-profile img {
+  margin-right: 15px
+
+}
+#seller-service-container .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#seller-service-container .username {
+  color:rgb(34, 34, 34);
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:300;
+  margin-bottom: 2px
+}
+#seller-service-container .username-owner {
+  color:rgb(89, 89, 89);
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+}
+#seller-service-container a {
+  text-decoration: underline;
 }

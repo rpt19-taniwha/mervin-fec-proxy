@@ -2,7 +2,7 @@ import React from 'react';
 
 function Menu() {
   return (
-    <div className="menu-wrapper">
+    <div id="menu-wrapper">
       <ul className="menu-list">
         <li id="menu-item">Jewelry & Accessories</li>
         <li id="menu-item">Clothing & Shoes</li>

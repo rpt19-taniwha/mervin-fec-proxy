@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className="footer-wrapper">
-    <img id="footer-2" src="https://mervin-fec-service.s3-us-west-1.amazonaws.com/footer-2.png"></img>
-    <div className="footer-list-wrapper">
+    <div id="footer-wrapper">
+      <img id="footer-2" src="https://mervin-fec-service.s3-us-west-1.amazonaws.com/footer-2.png"></img>
+      <div className="footer-list-wrapper">
 
       <div className="footer-shop-wrapper">
         <div className="footer-label">Shop</div>
