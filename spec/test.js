@@ -14,6 +14,7 @@ beforeAll(async () => {
   });
   page = await browser.newPage();
   await page.setViewport({ width, height });
+  await page.goto(pageUrl, {waitUntil: 'networkidle2'})
 });
 
 afterAll( () => {
@@ -22,9 +23,11 @@ afterAll( () => {
 
 describe('Proxy', () => {
 
-  beforeAll( async () => {
-    await page.goto(pageUrl, {waitUntil: 'networkidle2'})
-  })
+  // beforeAll( async () => {
+
+  // })
+
+
 
   it('should render search bar', async done => {
     const search = await page.$eval('.search-wrapper', el => el ? true : false);
@@ -58,14 +61,19 @@ describe('Proxy', () => {
 
 
 describe('Product service', () => {
-  beforeEach( async () => {
-    await page.goto(pageUrl, {waitUntil: 'networkidle2'})
-  })
-  it('should render all components', async done => {
-    var log = await page.$eval('.price-amount', e => e);
-    console.log(log)
+
+  it('should render product name', async done => {
+    var name = await page.$eval('.name-component', el => el.textContent);
+    expect(name).toEqual('PokéNatomy: The Science of Pokémon (An Unofficial Guide)')
+    done();
+  });
+
+  it('should render stars', async done => {
+    var stars = await page.$$eval('.star-icon', el => el.length);
+    expect(stars).toEqual(5)
     done();
   })
+
 });
 
 // describe('Image service', () => {
