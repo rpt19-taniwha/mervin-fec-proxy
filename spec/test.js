@@ -69,38 +69,3 @@ describe('Product service', () => {
   })
 
 });
-
-// describe('Image service', () => {
-//   beforeEach( async () => {
-//     await page.goto(pageUrl, {waitUntil: 'networkidle2'})
-//   })
-//   it('should render all services', async done => {
-//     var log = await page.$eval('.price-component', e => e);
-//     console.log(log)
-//     done();
-//   })
-// });
-
-// describe('Review service', () => {
-//   beforeEach( async () => {
-//     await page.goto(pageUrl, {waitUntil: 'networkidle2'})
-//   })
-//   it('should render all services', async done => {
-//     var log = await page.$eval('.price-component', e => e);
-//     console.log(log)
-//     done();
-//   })
-// });
-
-// describe('Youmayalsolike service', () => {
-//   beforeEach( async () => {
-//     await page.goto(pageUrl, {waitUntil: 'networkidle2'})
-//   })
-//   it('should render all services', async done => {
-//     var log = await page.$eval('.price-component', e => e);
-//     console.log(log)
-//     done();
-//   })
-// });
-
-
