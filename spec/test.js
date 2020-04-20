@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const pageUrl = 'http://ec2-18-144-28-164.us-west-1.compute.amazonaws.com:9999/listing/549504785'
+const pageUrl = 'http://ec2-18-144-28-164.us-west-1.compute.amazonaws.com:9999/listing/549504785';
 
 let page;
 let browser;
@@ -22,12 +22,6 @@ afterAll( () => {
 })
 
 describe('Proxy', () => {
-
-  // beforeAll( async () => {
-
-  // })
-
-
 
   it('should render search bar', async done => {
     const search = await page.$eval('.search-wrapper', el => el ? true : false);
