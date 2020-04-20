@@ -3,6 +3,7 @@ import Search from './Search.jsx';
 import Menu from './Menu.jsx';
 import Footer from './Footer.jsx';
 import Seller from './Seller.jsx';
+import Subscribe from './Subscribe.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -33,6 +34,7 @@ class App extends React.Component {
           </div>
           <div className="col-sm-1"></div>
         </div>
+        <Subscribe/>
         <Footer/>
       </div>
     )
