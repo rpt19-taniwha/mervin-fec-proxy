@@ -42,7 +42,6 @@ describe('Proxy', () => {
 
   it('should render menu bar', async done => {
     var menu = await page.$$eval('#menu-item', el => el.map(each => each.textContent));
-    console.log(menu)
     expect(menu[0]).toEqual('Jewelry & Accessories');
     expect(menu[1]).toEqual('Clothing & Shoes');
     expect(menu[2]).toEqual('Home & Living');

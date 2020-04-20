@@ -25,22 +25,21 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
     "jest": "^25.3.0",
     "jest-puppeteer": "^4.4.0",
     "puppeteer": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "style-loader": "^1.1.4",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "css-loader": "^3.5.2",
     "express": "^4.17.1",
-    "node": "^13.11.0",
-    "style-loader": "^1.1.4"
+    "node": "^13.11.0"
   },
   "jest": {
     "preset": "jest-puppeteer"
   }
-
 }
