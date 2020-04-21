@@ -4,8 +4,10 @@ class Menu extends React.Component {
   constructor() {
     super();
     this.state = {
-      hover: null
+      hover: null,
+      menu: ['Accessories', 'Bags & Purses', 'Necklaces', 'Rings', 'Earrings', 'Bracelets', 'Body Jewelry']
     }
+
   }
 
   mouseEnter (e) {
@@ -39,9 +41,9 @@ class Menu extends React.Component {
           <hr className="divider"></hr>
           <div className="menu-popup-wrapper">
             <div className="menu-popup-list">
-              <div>test</div>
-              <div>test</div>
-              <div>test</div>
+              {this.state.menu.map((each, index) => {
+                return (<div id="menu-popup-item" key={index}>{each}</div>)
+              })}
             </div>
           </div>
         </div>
@@ -89,3 +91,13 @@ console.shallowCloneLog = function(){
     }
   }));
 }
+
+const jewelryAccessories = ['Accessories', 'Bags & Purses', 'Necklaces', 'Rings', 'Earrings', 'Bracelets', 'Body Jewelry'];
+const clothingShoes = [`Women's`, `Men's`, `Kids' & Baby`, 'Bags & Purses'];
+// const homeLiving;
+// const weddingParty;
+// const toysEntertainment;
+// const artCollectibles;
+// const craftSupplies;
+// const vintage;
+// const gifts;

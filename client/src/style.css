@@ -572,4 +572,12 @@ hr {
   text-size-adjust:100%;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  z-index: 10;
+}
+
+#menu-popup-item {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 20px;
+  padding: 5px;
 }
