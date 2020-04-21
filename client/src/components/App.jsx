@@ -15,7 +15,7 @@ class App extends React.Component {
       <div>
         <Search/>
         <Menu/>
-        <hr className="divider"></hr>
+
         <div className="content-wrapper">
           <div className="left-wrapper">
             <div id="image"></div>
