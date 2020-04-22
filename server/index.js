@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(express.static(path.join(__dirname, '/../public/')));
+app.use(express.static(path.join(__dirname, '/../client/dist')));
 
 const port = process.env.PORT || 9999;
 
@@ -16,6 +16,6 @@ app.listen(port);
 
 app.get('/listing/:productNumber', (req, res) => {
   res.sendFile('index.html', {
-    root: path.join(__dirname, '/../public/'),
+    root: path.join(__dirname, '/../client/dist'),
   });
 });
