@@ -24,7 +24,7 @@ afterAll( () => {
 describe('Proxy', () => {
 
   it('should render search bar', async done => {
-    const search = await page.$eval('.search-wrapper', el => el ? true : false);
+    const search = await page.$eval('#search-wrapper', el => el ? true : false);
     const etsy = await page.$eval('#etsy', el => el ? true : false);
     const input = await page.$eval('.search-input', el => el ? true : false);
     const signin = await page.$eval('.search-signin-button', el => el ? true : false);
