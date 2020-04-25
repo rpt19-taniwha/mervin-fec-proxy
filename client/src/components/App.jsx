@@ -4,6 +4,7 @@ import Menu from './Menu.jsx';
 import Footer from './Footer.jsx';
 import Seller from './Seller.jsx';
 import Subscribe from './Subscribe.jsx';
+import Terms from './Terms.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -15,8 +16,7 @@ class App extends React.Component {
       <div>
         <Search/>
         <Menu/>
-
-        <div className="content-wrapper">
+        <div id="content-wrapper">
           <div className="left-wrapper">
             <div id="image"></div>
             <div id="root"></div>
@@ -36,6 +36,7 @@ class App extends React.Component {
         </div>
         <Subscribe/>
         <Footer/>
+        <Terms/>
       </div>
     )
   }

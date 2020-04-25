@@ -8,7 +8,9 @@ function Subscribe() {
         <div className="subscribe-text">Yes! Send me exclusive offers, unique gift ideas, and personalized tips for shopping and selling on Etsy.</div>
         <div className="subscribe-input-wrapper">
           <input className="subscribe-input" type="email" placeholder="Enter your email" autoComplete="off" autoCorrect="off" autoCapitalize="off"/>
-          <button className="subscribe-input-button">Subscribe</button>
+          <div className="subscribe-input-button-wrapper">
+            <button className="subscribe-input-button">Subscribe</button>
+          </div>
         </div>
       </div>
     </div>
