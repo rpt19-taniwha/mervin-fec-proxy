@@ -51,13 +51,13 @@ class Menu extends React.Component {
           <hr className="divider"></hr>
           <div id="menu-popup-wrapper" onMouseEnter={(e) => this.popupEnter(e)} onMouseLeave={()=> this.popupLeave()} >
             <div className="menu-popup-list" >
-              <div className="menu-popup-item-wrapper">
+              <div className="menu-popup-item-wrapper1">
                 <div className="menu-popup-item-topic">All Jewelry & Accessories</div>
               </div>
               {this.state.menu.map((each, index) => {
                 return (<div className="menu-popup-item-wrapper"><div id="menu-popup-item" key={index}>{each}</div></div>)
               })}
-              <div className="menu-popup-item-wrapper">
+              <div className="menu-popup-item-wrapper1">
                 <div className="menu-popup-item-topic">All Jewelry</div>
               </div>
             </div>
